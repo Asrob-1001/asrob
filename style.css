@@ -8,16 +8,22 @@ body
   background-attachment: fixed; */
   text-align: center;
   color: white;
-  font-family: Verdana;
+  font-family: xp;
   cursor: url("images/curs0rz/toontown.png"), auto;
+ 
 
 }
 
+@font-face 
+{
+  font-family: xp;
+  src: url('fonts/windows-xp-tahoma.ttf') format("truetype");
+}
 
 @font-face 
 {
-    font-family: "vib"; 
-    src: url("/fonts/vib-ribbon.ttf") format("truetype");
+  font-family: "vib"; 
+  src: url("/fonts/vib-ribbon.ttf") format("truetype");
 }
 
 	@-webkit-keyframes snowflakes-fall {
