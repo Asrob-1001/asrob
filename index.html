@@ -2,6 +2,18 @@
 
 <head>
     <title>Aaron's Webpage</title>
+    <link rel="icon" type="image/x-icon" href="https://asrob.neocities.org/images/favicon/favicon.ico">
+    <script>
+        function updateTitle() {
+            var iframe = document.getElementById('neocities');
+            try {
+                var newTitle = iframe.contentWindow.document.title;
+                document.title = newTitle;
+            } catch (error) {
+                console.error("Unable to access iframe content due to cross-origin restrictions.");
+            }
+        }
+    </script>
 </head>
 
 <style>
@@ -19,7 +31,7 @@ iframe {
 </style>
 
 <body>
-    <iframe src="http://asrob.neocities.org"/>
+    <iframe id="neocities" src="http://asrob.neocities.org" onload="updateTitle()">
 </body>
 
 </html>
